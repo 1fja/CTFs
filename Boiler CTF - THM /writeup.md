@@ -298,6 +298,7 @@ Another alternative is through reading our last flag with the following command 
 That lead us to our last flag. But actually, there's something that most of people don't actually try.
 We can transform ourselves in root, but how??
 
+There's **more ways** to do that. But here's the one I did completly alone and heres how:
 
 # 2ND METHOD:
 
