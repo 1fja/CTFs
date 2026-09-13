@@ -6,10 +6,10 @@ Date of completion: 13/09/26
 **Note: This write up details a penetration testing conducted in a virtual system hosted on tryhackme.com . This system was designed for training**
 
 # Target Information:
-Name: Boiler CTF
+```Name: Boiler CTF
 IP: 10.65.182.94 [it changed through out the write up, my time on the machine expired, sadly]
 Operating System: Linux
-
+```
 # Tools used:
 ```
 nmap
@@ -23,7 +23,7 @@ GTFOBINS
 *Activies were conducted to simulate an attacker*
 
 # Summary Results
-Boiler CTF was a medium machine to compromise. A lot of habbit holes and distractions until you can find the right directory. The machine required to SSH in another user to obtain the first flag. Obtaing the last flag required a vulnerability inside a linux command, that leads to reading files and overwriting them.[
+Boiler CTF was a medium machine to compromise. A lot of habbit holes and distractions until you can find the right directory. The machine required to SSH in another user to obtain the first flag. Obtaing the last flag required a vulnerability inside a linux command, that leads to reading files and overwriting them.
 
 The exploitation starts in a folder that has sar2html, which is a System Activity Reporter, this specific tool is vulnerable to Remote Command Injection (CVE-2025-34030). A low priveleged user can exploit this vulnerability and actually view the directory of www-data.
 A specific .txt file shows the password of a user to the SSH. Using these credentials we can also find another password of a more privileged user. This user is able to exploit the permissions of the Operating System through the command 'find' and compromise the machine, leading to a full privileged user.
@@ -184,7 +184,9 @@ http://10.65.182.94/joomla/administrator/templates
 http://10.65.182.94/joomla/images/banners
 ```
 
-Nothing very useful in these directories, navigating through these directories can be time consuming and it doesn't have valuable information, but, fuzzing through directories again and this time on  the directorie '/joomla/, we find a lot of new directories
+Nothing very useful in these directories, navigating through these directories can be time consuming and it doesn't have valuable information, but, fuzzing through directories again and this time on the directories '/joomla/, we find a lot of new directories
+
+## Note: I've used dirsearch again.
 
 ```
 17:03:18] 301 -  320B  - /joomla/_files  ->  http://10.65.182.94/joomla/_files/
