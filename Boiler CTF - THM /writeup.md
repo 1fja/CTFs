@@ -111,6 +111,7 @@ local: .info.txt remote: .info.txt
 “Whfg jnagrq gb frr vs lbh svaq vg. Yby. Erzrzore: Rahzrengvba vf gur xrl!”
 
 Using dencode.com , we can decrypt the message:
+
 Just wanted to see if you find it. Lol. Remember: Enumeration is the key!
 
 (grrrr)
