@@ -112,7 +112,7 @@ local: .info.txt remote: .info.txt
 
 Using dencode.com , we can decrypt the message:
 
-Just wanted to see if you find it. Lol. Remember: Enumeration is the key!
+``"Just wanted to see if you find it. Lol. Remember: Enumeration is the key!"``
 
 (grrrr)
 
