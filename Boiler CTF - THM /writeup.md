@@ -24,7 +24,7 @@ GTFOBINS
 *Activies were conducted to simulate an attacker*
 
 # Summary Results
-Boiler CTF was a medium machine to compromise. A lot of habbit holes and distractions until you can find the right directory. The machine required to SSH in another user to obtain the first flag. Obtaing the last flag required a vulnerability inside a linux command, that leads to reading files and overwriting them.
+Boiler CTF was a medium machine to compromise. A lot of rabbit holes and distractions until you can find the right directory. The machine required to SSH in another user to obtain the first flag. Obtaing the last flag required a vulnerability inside a linux command, that leads to reading files and overwriting them.
 
 The exploitation starts in a folder that has sar2html, which is a System Activity Reporter, this specific tool is vulnerable to Remote Command Injection (CVE-2025-34030). A low priveleged user can exploit this vulnerability and actually view the directory of www-data.
 A specific .txt file shows the password of a user to the SSH. Using these credentials we can also find another password of a more privileged user. This user is able to exploit the permissions of the Operating System through the command 'find' and compromise the machine, leading to a full privileged user.
