@@ -204,7 +204,7 @@ we got his password and hash!
 
 let’s view our permission in blood hound
 
-(image later)
+![BloodHound](image.webp)
 
 As we can see, we have permission “AllowedToDelegate”, which means that we can impersonate a service. By doing that, we would be able to extract hashes, let’s see what service we can impersonate.
 
